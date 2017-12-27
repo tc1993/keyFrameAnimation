@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PAp-zp-2YI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2jx-Yn-4XT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-pa-I8O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLl-gX-kpu">
+                                <rect key="frame" x="77.5" y="28" width="220" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.57295261380906781" blue="0.37535161893517766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="8fx-8h-rdA"/>
+                                    <constraint firstAttribute="height" constant="49" id="MPT-vs-9G8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="开始优化的帧动画"/>
+                                <connections>
+                                    <action selector="beginAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4H-91-2Dr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-wa-QqA">
+                                <rect key="frame" x="77" y="106" width="220" height="49"/>
+                                <color key="backgroundColor" red="0.59545247933658829" green="0.6816907274953713" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Iqg-aZ-QUp"/>
+                                    <constraint firstAttribute="height" constant="49" id="REC-z4-zcE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="开始imagView的帧动画">
+                                    <color key="titleColor" red="1" green="0.4875975826652259" blue="0.38419261378440284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1w-nF-0Yn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="tLl-gX-kpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8cm-LO-Ewi"/>
+                            <constraint firstItem="aTG-wa-QqA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Adq-ZX-UYd"/>
+                            <constraint firstItem="tLl-gX-kpu" firstAttribute="top" secondItem="PAp-zp-2YI" secondAttribute="bottom" constant="8" id="BIa-B7-SkJ"/>
+                            <constraint firstItem="H5c-pa-I8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HLm-js-f5I"/>
+                            <constraint firstItem="2jx-Yn-4XT" firstAttribute="top" secondItem="H5c-pa-I8O" secondAttribute="bottom" id="LQi-3f-OQO"/>
+                            <constraint firstAttribute="trailing" secondItem="H5c-pa-I8O" secondAttribute="trailing" id="QAE-VR-u7M"/>
+                            <constraint firstItem="H5c-pa-I8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dGy-yj-Jco"/>
+                            <constraint firstItem="aTG-wa-QqA" firstAttribute="top" secondItem="tLl-gX-kpu" secondAttribute="bottom" constant="29" id="wLp-SR-gD2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="H5c-pa-I8O" id="y4r-rG-JSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>
