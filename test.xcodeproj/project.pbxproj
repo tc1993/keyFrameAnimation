@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A32794E1FF3442E007BBFD5 /* CCKeyFrameAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A32794B1FF3442E007BBFD5 /* CCKeyFrameAnimationView.m */; };
-		7A3279521FF377A7007BBFD5 /* UIImage+keyFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3279511FF377A7007BBFD5 /* UIImage+keyFrameDecoder.m */; };
 		7A32799E1FF39D79007BBFD5 /* img36.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A32795C1FF39D74007BBFD5 /* img36.png */; };
 		7A32799F1FF39D79007BBFD5 /* img48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A32795D1FF39D74007BBFD5 /* img48.png */; };
 		7A3279A01FF39D79007BBFD5 /* img39.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A32795E1FF39D74007BBFD5 /* img39.png */; };
@@ -83,6 +81,8 @@
 		7ABFEAC51FE2741700E90037 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFEAC41FE2741700E90037 /* main.m */; };
 		7ABFEACF1FE2741700E90037 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFEACE1FE2741700E90037 /* testTests.m */; };
 		7ABFEADA1FE2741700E90037 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFEAD91FE2741700E90037 /* testUITests.m */; };
+		7AF898AB1FF4C85100B8E725 /* UIImage+keyFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF898A71FF4C85100B8E725 /* UIImage+keyFrameDecoder.m */; };
+		7AF898AC1FF4C85100B8E725 /* CCKeyFrameAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF898A81FF4C85100B8E725 /* CCKeyFrameAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,10 +103,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A32794B1FF3442E007BBFD5 /* CCKeyFrameAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKeyFrameAnimationView.m; sourceTree = "<group>"; };
-		7A32794C1FF3442E007BBFD5 /* CCKeyFrameAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyFrameAnimationView.h; sourceTree = "<group>"; };
-		7A3279501FF377A7007BBFD5 /* UIImage+keyFrameDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+keyFrameDecoder.h"; sourceTree = "<group>"; };
-		7A3279511FF377A7007BBFD5 /* UIImage+keyFrameDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+keyFrameDecoder.m"; sourceTree = "<group>"; };
 		7A32795C1FF39D74007BBFD5 /* img36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img36.png; sourceTree = "<group>"; };
 		7A32795D1FF39D74007BBFD5 /* img48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img48.png; sourceTree = "<group>"; };
 		7A32795E1FF39D74007BBFD5 /* img39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img39.png; sourceTree = "<group>"; };
@@ -189,6 +185,10 @@
 		7ABFEAD51FE2741700E90037 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABFEAD91FE2741700E90037 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		7ABFEADB1FE2741700E90037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AF898A71FF4C85100B8E725 /* UIImage+keyFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+keyFrameDecoder.m"; sourceTree = "<group>"; };
+		7AF898A81FF4C85100B8E725 /* CCKeyFrameAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKeyFrameAnimationView.m; sourceTree = "<group>"; };
+		7AF898A91FF4C85100B8E725 /* UIImage+keyFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+keyFrameDecoder.h"; sourceTree = "<group>"; };
+		7AF898AA1FF4C85100B8E725 /* CCKeyFrameAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyFrameAnimationView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,17 +216,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A3279491FF3442E007BBFD5 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				7A32794C1FF3442E007BBFD5 /* CCKeyFrameAnimationView.h */,
-				7A32794B1FF3442E007BBFD5 /* CCKeyFrameAnimationView.m */,
-				7A3279501FF377A7007BBFD5 /* UIImage+keyFrameDecoder.h */,
-				7A3279511FF377A7007BBFD5 /* UIImage+keyFrameDecoder.m */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
 		7A32795B1FF39D0B007BBFD5 /* imageSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,8 +312,8 @@
 		7ABFEAB41FE2741700E90037 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				7AF898A61FF4C85100B8E725 /* KeyFrameAnimation */,
 				7A32795B1FF39D0B007BBFD5 /* imageSource */,
-				7A3279491FF3442E007BBFD5 /* Animation */,
 				7ABFEAB51FE2741700E90037 /* AppDelegate.h */,
 				7ABFEAB61FE2741700E90037 /* AppDelegate.m */,
 				7ABFEAB81FE2741700E90037 /* ViewController.h */,
@@ -354,6 +343,17 @@
 				7ABFEADB1FE2741700E90037 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		7AF898A61FF4C85100B8E725 /* KeyFrameAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7AF898A71FF4C85100B8E725 /* UIImage+keyFrameDecoder.m */,
+				7AF898A81FF4C85100B8E725 /* CCKeyFrameAnimationView.m */,
+				7AF898A91FF4C85100B8E725 /* UIImage+keyFrameDecoder.h */,
+				7AF898AA1FF4C85100B8E725 /* CCKeyFrameAnimationView.h */,
+			);
+			path = KeyFrameAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,10 +555,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF898AB1FF4C85100B8E725 /* UIImage+keyFrameDecoder.m in Sources */,
 				7ABFEABA1FE2741700E90037 /* ViewController.m in Sources */,
-				7A3279521FF377A7007BBFD5 /* UIImage+keyFrameDecoder.m in Sources */,
-				7A32794E1FF3442E007BBFD5 /* CCKeyFrameAnimationView.m in Sources */,
 				7ABFEAC51FE2741700E90037 /* main.m in Sources */,
+				7AF898AC1FF4C85100B8E725 /* CCKeyFrameAnimationView.m in Sources */,
 				7ABFEAB71FE2741700E90037 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
