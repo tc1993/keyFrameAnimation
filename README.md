@@ -10,7 +10,7 @@ An engine to display image frames in animation without causing high-memory usage
 
 
 ## Installation
-#### Cocoapods(iOS7+)
+#### Cocoapods(iOS8+)
 
 1. Add these lines below to your Podfile 
 	
